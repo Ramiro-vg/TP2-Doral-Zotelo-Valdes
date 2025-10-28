@@ -129,10 +129,10 @@ footer{
     margin-top: 50px;
     background-color: rgba(125, 120, 130, 0.6);;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas:
-    'parque proyecto grupo escuela'
+    'parque proyecto grupo escuela logo'
     ;
 }
 
@@ -156,7 +156,9 @@ footer div{
     grid-area: escuela;
 }
 
-
+.imagen{
+    grid-area: logo;
+}
 
 
 
@@ -207,11 +209,17 @@ footer div{
 
     footer{
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas:
         'parque proyecto'
         'grupo escuela'
+        'logo logo'
         ;
     }
 
+    .imagen{
+        position: relative;
+        left: 230px;
+    }
 }
+
